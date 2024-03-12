@@ -152,10 +152,10 @@ def get_savepath(fp):
 def main():
 
     fp = select_file()
-    print('will load data from : ', fp)
+    print('\n\nwill load data from : ', fp)
 
     sp = get_savepath(fp)
-    print('will save new file to: ', sp)
+    print('\n\nwill save new file to: ', sp)
 
     sf = filter_sex()
 
@@ -166,7 +166,7 @@ def main():
     newdatatable = convert_datatable(lowdata, middata, highdata)
 
     save_newData(newdatatable, sp)
-    print("new file saved!! all done!!")
+    print("\n\nnew file saved!! all done!!")
 
 
 if __name__ == "__main__":
